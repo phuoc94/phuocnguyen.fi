@@ -1,0 +1,28 @@
+@import "navbar", "variables";
+
+body {
+  font-family: $font-stack;
+  background: $firstC;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: $secondC;
+  border-radius: 6px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198);
+}
+.main {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

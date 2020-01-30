@@ -1,0 +1,56 @@
+.nav-menu {
+  background-color: #f4f4f4;
+}
+
+.nav-links {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 20px;
+  line-height: 60px;
+  color: #00C6CF;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  background: #eaeaea;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474554;
+  border-radius: 6px;
+  -webkit-box-shadow: 9px 9px 16px #a3b1c6;
+          box-shadow: 9px 9px 16px #a3b1c6;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1.0875rem 1.45rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
