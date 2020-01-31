@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./css/main.css"
+import "../css/main.css"
 
 const Menu = ({ siteTitle }) => (
   <div className="nav-menu">
