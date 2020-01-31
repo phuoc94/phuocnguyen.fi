@@ -3,6 +3,7 @@
 }
 
 .nav-links {
+  margin: 0 auto;
   max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
