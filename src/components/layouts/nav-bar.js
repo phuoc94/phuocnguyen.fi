@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../css/main.css"
+import "../css/main.scss"
 import Logo from "../querys/logo"
 
 const Menu = ({ siteTitle }) => (
