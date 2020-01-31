@@ -1,23 +1,39 @@
 @import "variables";
 
-.nav-menu {
+.nav-bar {
   background-color: #f4f4f4;
 }
-.nav-links {
+.nav-menu {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0 1.0875rem;
+}
+.logo {
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  padding: 15px;
+  margin: 0 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  .gatsby-image-wrapper {
+    width: 160px;
+    height: 103.6px;
+  }
+}
+
+.nav-links {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   li {
     margin: 0;
-  }
-  li a {
-    text-decoration: none;
-    padding: 20px;
-    line-height: 60px;
-    color: $thirdC;
-    font-size: 1.5em;
-    font-weight: bold;
+    a {
+      text-decoration: none;
+      padding: 20px 0 20px 20px;
+      line-height: 60px;
+      color: $thirdC;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
   }
 }

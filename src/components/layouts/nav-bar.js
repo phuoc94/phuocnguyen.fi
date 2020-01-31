@@ -1,10 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../css/main.css"
+import Logo from "../querys/logo"
 
 const Menu = ({ siteTitle }) => (
-  <div className="nav-menu">
-    <nav>
+  <div className="nav-bar">
+    <nav className="nav-menu">
+      <div className="logo">
+        <Logo />
+      </div>
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
