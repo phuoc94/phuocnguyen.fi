@@ -31,7 +31,9 @@
         display: block;
         text-decoration: none;
         padding: 20px;
-        border-right: #aaa;
+        color: $thirdC;
+        font-size: 1.1em;
+        font-weight: bold;
       }
       a:hover {
         background-color: #ddd;

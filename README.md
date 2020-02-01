@@ -58,5 +58,5 @@
 
     ```shell
     firebase use websites-2c968
-    firebse deploy
+    firebase deploy
     ```

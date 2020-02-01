@@ -40,7 +40,9 @@
   display: block;
   text-decoration: none;
   padding: 20px;
-  border-right: #aaa;
+  color: #00c6cf;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .nav-menu ul li a:hover {
