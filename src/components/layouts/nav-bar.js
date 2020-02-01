@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../css/main.scss"
+import "../css/main.css"
 import Logo from "../querys/logo"
 
 const Menu = ({ siteTitle }) => (
@@ -9,6 +9,10 @@ const Menu = ({ siteTitle }) => (
       <div className="logo">
         <Logo />
       </div>
+      <input className="menu-btn" type="checkbox" id="menu-btn" />
+      <label className="menu-icon" htmlFor="menu-btn">
+        <span className="nav-icon"></span>
+      </label>
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>

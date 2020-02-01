@@ -1,13 +1,4 @@
 @import "variables";
-
-.nav-bar {
-  background-color: #f4f4f4;
-}
-.nav-menu {
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 0 1.0875rem;
-}
 .logo {
   position: absolute;
   border-radius: 0 0 10px 10px;
@@ -19,20 +10,119 @@
     height: 103.6px;
   }
 }
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  li {
+.nav-menu {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1.0875rem;
+}
+.nav-menu {
+  width: 100%;
+  z-index: 3;
+  ul {
     margin: 0;
-    a {
-      text-decoration: none;
-      padding: 20px 0 20px 20px;
-      line-height: 60px;
-      color: $thirdC;
-      font-size: 1.5em;
-      font-weight: bold;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    li {
+      margin: 0;
+      padding: 0;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        border-right: #aaa;
+      }
+      a:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  .nav-links {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background: white;
+  }
+  .menu-icon {
+    padding: 18px 10px;
+    background: $secondC;
+    border-radius: 10px;
+    margin: 14px 0;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    .nav-icon {
+      background: #333;
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: relative;
+      transition: background 0.2s ease-out;
+    }
+    .nav-icon:before {
+      background: #333;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      top: 5px;
+    }
+    .nav-icon:after {
+      background: #333;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      top: -5px;
+    }
+  }
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .nav-links {
+    max-height: 90vh;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    height: 66px;
+    background-color: white;
+  }
+  .nav-menu {
+    ul {
+      li {
+        float: left;
+        a {
+          padding: 20px 30px;
+        }
+      }
+    }
+    .nav-links {
+      clear: none;
+      display: flex;
+      justify-content: flex-end;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
     }
   }
 }

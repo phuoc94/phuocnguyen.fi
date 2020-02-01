@@ -8,11 +8,7 @@ import SEO from "../components/querys/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <br></br>
-    <br></br>
-
     <h1>Hi from Home page</h1>
-
     <Image />
   </Layout>
 )
