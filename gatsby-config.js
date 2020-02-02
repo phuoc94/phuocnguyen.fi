@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Phuoc Nguyen`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `My portfolio website build with gatsby`,
     author: `@Phuoc Nguyen`,
   },
   plugins: [
@@ -15,13 +15,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `./src/data`,
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `phuoc-nguyen-gatsby-portfolio`,
-        short_name: `porfolio`,
+        short_name: `Phuoc Nguyen`,
         start_url: `/`,
         background_color: `#eaeaea`,
         theme_color: `#eaeaea`,

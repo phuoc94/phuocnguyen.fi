@@ -1,7 +1,8 @@
 @import "navbar", "variables";
-
+* {
+  font-family: $font-stack !important;
+}
 body {
-  font-family: $font-stack;
   background: $firstC;
 }
 
@@ -29,4 +30,16 @@ body {
   p {
     margin: 0;
   }
+}
+
+.imageee {
+  .gatsby-image-wrapper {
+    max-height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
 }

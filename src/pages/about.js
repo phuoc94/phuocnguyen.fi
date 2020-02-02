@@ -3,11 +3,14 @@ import React from "react"
 
 import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
+import Jumpo from "../components/layouts/jumpo"
 
+const title = "About"
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
-    <h1>Hi from About page</h1>
+    <Jumpo pageTitle={title} />
+    <SEO title={title} />
+    <h1>Hi from {title} page</h1>
   </Layout>
 )
 
