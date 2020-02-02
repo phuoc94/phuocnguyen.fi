@@ -28,12 +28,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `phuoc-nguyen-gatsby-portfolio`,
+        name: `phuoc-nguyen-portfolio`,
         short_name: `Phuoc Nguyen`,
         start_url: `/`,
         background_color: `#eaeaea`,
         theme_color: `#eaeaea`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/logo-icon.png`, // This path is relative to the root of the site.
       },
     },
