@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../layouts/layout"
+import Project from "../layouts/project"
 
 export const query = graphql`
   query($slug: String!) {
@@ -24,7 +25,12 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <pre>{JSON.stringify(project, null, 2)}</pre>
+      <Project
+        title={project.title}
+        description={project.description}
+        url={project.url}
+        ImageData={project.image.childImageSharp.fluid}
+      />
     </Layout>
   )
 }

@@ -1,18 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-/*import Header from "./header"*/
-import Menu from "./nav-bar"
-import Jumpo from "./jumpo"
-
+import Menu from "../templates/nav-bar"
 import "../css/layout.css"
 
 const Layout = ({ children, pageTitle }) => {
@@ -29,7 +18,6 @@ const Layout = ({ children, pageTitle }) => {
   return (
     <>
       <Menu siteTitle={data.site.siteMetadata.title} />
-      <Jumpo pageTitle={pageTitle} />
       <div className="main">
         <main>{children}</main>
         <footer className="footer">

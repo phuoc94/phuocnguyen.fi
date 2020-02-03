@@ -1,4 +1,4 @@
-@import "navbar", "variables";
+@import "navbar", "projects", "variables";
 * {
   font-family: $font-stack !important;
 }
@@ -17,7 +17,7 @@ body {
 .main {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 67px 1.0875rem 1.45rem;
   h1 {
     text-align: center;
   }
@@ -29,22 +29,6 @@ body {
   line-height: 30px;
   p {
     margin: 0;
-  }
-}
-
-.imageee {
-  .gatsby-image-wrapper {
-    height: 600px;
-  }
-}
-.projects {
-  display: flex;
-}
-.project-preview {
-  margin: 20px 30px;
-  .gatsby-image-wrapper {
-    width: 250px;
-    height: 250px;
   }
 }
 @media (min-width: 768px) {
