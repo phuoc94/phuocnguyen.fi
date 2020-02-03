@@ -37,6 +37,15 @@ body {
     height: 600px;
   }
 }
-
+.projects {
+  display: flex;
+}
+.project-preview {
+  margin: 20px 30px;
+  .gatsby-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+}
 @media (min-width: 768px) {
 }

@@ -209,4 +209,19 @@ body {
 .imageee .gatsby-image-wrapper {
   height: 600px;
 }
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-preview {
+  margin: 20px 30px;
+}
+
+.project-preview .gatsby-image-wrapper {
+  width: 250px;
+  height: 250px;
+}
 /*# sourceMappingURL=main.css.map */
