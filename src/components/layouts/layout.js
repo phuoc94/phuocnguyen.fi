@@ -11,10 +11,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 /*import Header from "./header"*/
 import Menu from "./nav-bar"
+import Jumpo from "./jumpo"
 
 import "../css/layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Menu siteTitle={data.site.siteMetadata.title} />
+      <Jumpo pageTitle={pageTitle} />
       <div className="main">
         <main>{children}</main>
         <footer className="footer">
