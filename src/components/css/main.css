@@ -15,7 +15,7 @@
 
 .nav-menu {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1144px;
   padding: 0 1.0875rem;
 }
 
@@ -168,27 +168,86 @@
 }
 
 .projectsPreview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+
+.projectsPreview a {
+  text-decoration: none;
+  color: #333;
 }
 
 .projectPreview {
-  margin: 20px 30px;
+  display: block;
+  height: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  border-radius: 2px;
+  background: white;
 }
 
-.projectPreview .gatsby-image-wrapper {
-  width: 250px;
-  height: 250px;
+.projectPreview h2 {
+  padding: 18px;
+  margin: 0;
+}
+
+.projectPreview p {
+  padding: 24px;
+  margin: 0;
+}
+
+.projectPreview:hover {
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.projectPreview:hover .gatsby-image-wrapper {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 17px 46px -5px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 17px 46px -5px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.project h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+}
+
+.project .description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .project .gatsby-image-wrapper {
-  width: 500px;
-  height: 500px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  border-radius: 10px;
 }
 
-* {
-  font-family: "Righteous", cursive !important;
+.tag {
+  padding: 20px;
 }
 
 body {
@@ -208,8 +267,9 @@ body {
 
 .main {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1144px;
   padding: 67px 1.0875rem 1.45rem;
+  min-height: calc(100vh - 66px - 70px);
 }
 
 .main h1 {
@@ -217,6 +277,7 @@ body {
 }
 
 .footer {
+  padding: 20px 0;
   width: 100%;
   text-align: center;
   line-height: 30px;

@@ -1,6 +1,5 @@
 @import "navbar", "projects", "variables";
 * {
-  font-family: $font-stack !important;
 }
 body {
   background: $firstC;
@@ -16,14 +15,16 @@ body {
 }
 .main {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1144px;
   padding: 67px 1.0875rem 1.45rem;
+  min-height: calc(100vh - 66px - 70px);
   h1 {
     text-align: center;
   }
 }
 
 .footer {
+  padding: 20px 0;
   width: 100%;
   text-align: center;
   line-height: 30px;

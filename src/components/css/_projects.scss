@@ -1,18 +1,57 @@
 .projectsPreview {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
 }
 
 .projectPreview {
-  margin: 20px 30px;
+  display: block;
+  height: 100%;
+  h2 {
+    padding: 18px;
+    margin: 0;
+  }
+  p {
+    padding: 24px;
+    margin: 0;
+  }
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+}
+.projectPreview:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
+  transition: all 0.3s ease 0s;
   .gatsby-image-wrapper {
-    width: 250px;
-    height: 250px;
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 17px 46px -5px;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
   }
 }
 
 .project {
-  .gatsby-image-wrapper {
-    width: 500px;
-    height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  h1 {
+    grid-column: 1 / span 3;
   }
+  .description {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  .gatsby-image-wrapper {
+    grid-column: 3 / 4;
+    border-radius: 10px;
+  }
+}
+.tag {
+  padding: 20px;
 }

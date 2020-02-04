@@ -18,12 +18,10 @@ const Layout = ({ children, pageTitle }) => {
   return (
     <>
       <Menu siteTitle={data.site.siteMetadata.title} />
-      <div className="main">
-        <main>{children}</main>
-        <footer className="footer">
-          <p>© {new Date().getFullYear()} Phuoc Nguyen</p>
-        </footer>
-      </div>
+      <main className="main">{children}</main>
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Phuoc Nguyen</p>
+      </footer>
     </>
   )
 }

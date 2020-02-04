@@ -11,10 +11,11 @@ const PortfolioPage = () => {
       allProjectsJson {
         edges {
           node {
-            descriprion
+            predesc
             slug
             title
             url
+            tags
             image {
               childImageSharp {
                 fluid {
@@ -36,15 +37,18 @@ const PortfolioPage = () => {
       <div className="projectsPreview">
         {projects.map(({ node: project }) => {
           const title = project.title
-          const description = project.description
+          const predesc = project.predesc
           const slug = project.slug
           const imageData = project.image.childImageSharp.fluid
+          const tags = project.tags
+
           return (
             <ProjectPreview
               title={title}
-              description={description}
+              predesc={predesc}
               slug={slug}
               ImageData={imageData}
+              tags={tags}
             />
           )
         })}

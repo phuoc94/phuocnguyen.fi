@@ -4,13 +4,27 @@
     "slug": "portfolio-phuocnguyen",
     "url": "https://phuocnguyen.fi",
     "image": "../images/projects/logo.png",
-    "descriprion": "Portfolio Phuoc Nguyen"
+    "predesc": "Portfolio Phuoc Nguyen",
+    "description": "Sit fugiat labore consectetur fugiat est et occaecat. Magna do officia id sunt velit. Ipsum qui culpa excepteur incididunt aliqua nostrud.",
+
+    "tags": ["react", "portfolio"]
   },
   {
     "title": "Sudoku",
     "slug": "sukodu",
     "url": "#",
     "image": "../images/projects/sudoku.jpg",
-    "descriprion": "Sudoku / -solver game make with python pygame"
+    "predesc": "Sudoku / -solver game make with python pygame",
+    "description": "Sit fugiat labore consectetur fugiat est et occaecat. Magna do officia id sunt velit. Ipsum qui culpa excepteur incididunt aliqua nostrud.",
+    "tags": ["python", "pygame", "games"]
+  },
+  {
+    "title": "random",
+    "slug": "rand",
+    "url": "#",
+    "image": "../images/projects/sudoku.jpg",
+    "predesc": "Sit fugiat labore consectetur fugiat est et occaecat. Magna do officia id sunt velit. Ipsum qui culpa excepteur incididunt aliqua nostrud.",
+    "description": "Ea voluptate quis et reprehenderit tempor excepteur nulla dolore aute proident aute minim laborum. Consectetur aliqua ipsum excepteur quis dolore velit culpa magna qui ea laborum. Ut tempor sint amet amet qui nostrud tempor cupidatat. Irure duis deserunt do sunt. Duis qui laborum exercitation consectetur nisi anim. Enim Lorem minim minim non esse elit aliquip tempor nisi. Proident cupidatat velit nisi do deserunt consequat aliquip irure.Consequat eiusmod pariatur non nisi. Ex quis incididunt minim amet veniam elit. Non occaecat qui veniam fugiat quis aliqua ullamco magna elit commodo consectetur aliquip.Non dolore sunt id in ea occaecat laborum cillum nostrud anim eiusmod. Aliqua in nisi ipsum minim. Do qui amet tempor laboris labore excepteur sit eu. Deserunt veniam sint laborum nisi occaecat est veniam Lorem aute proident.",
+    "tags": ["python", "pygame", "games"]
   }
 ]

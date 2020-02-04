@@ -2,20 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
 
-const ProjectPreview = ({ slug, title, description, ImageData }) => (
-  <div className="projectPreview">
-    <Link to={`/${slug}/`}>
+const ProjectPreview = ({ slug, title, predesc, ImageData, tags }) => (
+  <Link to={`/${slug}/`}>
+    <div className="projectPreview">
+      <h2>{title}</h2>
       <Image fluid={ImageData} alt={title} />
-    </Link>
-
-    <h2>
-      <Link to={`/${slug}/`}>{title}</Link>
-    </h2>
-    <p>{description}</p>
-    <p>
-      <Link to={`/${slug}/`}>View this project</Link>
-    </p>
-  </div>
+      <p>{predesc}</p>
+      <div className="tags">
+        {tags.map(tag => {
+          return (
+            <a href={tag} className="tag">
+              {tag}
+            </a>
+          )
+        })}
+      </div>
+    </div>
+  </Link>
 )
 
 export default ProjectPreview

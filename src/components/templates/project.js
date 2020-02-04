@@ -7,7 +7,7 @@ export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
-      descriprion
+      description
       url
       image {
         childImageSharp {
