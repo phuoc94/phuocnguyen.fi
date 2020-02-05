@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    max-width: 500px;
+    max-width: calc(768px - 1.0875rem * 2);
     margin: 0 auto;
     label {
       display: grid;
@@ -36,10 +36,7 @@
       user-select: none;
       border-radius: 50px;
       margin: 0px auto;
-      border-width: initial;
       border-style: none;
-      border-color: initial;
-      border-image: initial;
     }
   }
 }
