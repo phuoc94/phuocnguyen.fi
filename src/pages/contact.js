@@ -14,24 +14,25 @@ const ContactPage = () => (
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          action="#"
         >
-          <div className="form-input">
-            <label>Full Name</label>
-            <input name="name" placeholder="Enter Your Name" type="text" />
-          </div>
-          <div className="form-input">
-            <label>Email</label>
-            <input name="email" placeholder="Enter Your Emai" type="email" />
-          </div>
-          <div className="form-input">
-            <label>message</label>
-            <textarea
-              name="message"
-              placeholder="Enter Your Message"
-            ></textarea>
-          </div>
-
-          <button>Send</button>
+          <label>
+            Name:
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label>
+            Subject:
+            <input type="text" name="subject" id="subject" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message" id="message" rows="5" required />
+          </label>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
