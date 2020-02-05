@@ -15,7 +15,7 @@
 
 .nav-menu {
   margin: 0 auto;
-  max-width: 1144px;
+  max-width: 1280px;
   padding: 0 1.0875rem;
 }
 
@@ -42,7 +42,7 @@
   text-decoration: none;
   padding: 20px;
   color: #00c6cf;
-  font-size: 1.1em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -150,6 +150,7 @@
     float: left;
   }
   .nav-menu ul li a {
+    font-size: 1.1em;
     padding: 20px 30px;
   }
   .nav-menu .nav-links {
@@ -170,8 +171,8 @@
 .projectsPreview {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -197,6 +198,45 @@
 .projectPreview p {
   padding: 24px;
   margin: 0;
+  height: 100px;
+}
+
+.projectPreview .tags {
+  padding: 18px;
+}
+
+.projectPreview .tags a {
+  color: white;
+}
+
+.projectPreview .tags .tag {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 0.2rem 1rem;
+  border-radius: 50px;
+  background-color: #263238;
+}
+
+.projectPreview .tags .react {
+  background-color: #5ed4f4;
+}
+
+.projectPreview .tags .gatsby {
+  background-color: #703b97;
+}
+
+.projectPreview .tags .python {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f6b99), to(#f7d652));
+  background-image: linear-gradient(90deg, #2f6b99, #f7d652);
+}
+
+.projectPreview .tags .pygame {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#08e320), to(#baf51f));
+  background-image: linear-gradient(180deg, #08e320, #baf51f);
+}
+
+.projectPreview .tags .AI {
+  background-color: #59bfe1;
 }
 
 .projectPreview:hover {
@@ -220,34 +260,35 @@
 .project {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 
-.project h1 {
+.project .title {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / span 4;
+}
+
+.project .info {
+  color: red;
 }
 
 .project .description {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3 / span 5;
 }
 
 .project .gatsby-image-wrapper {
-  -ms-grid-column: 3;
+  -ms-grid-column: 4;
   -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
+  grid-column: 4 / 5;
   border-radius: 10px;
-}
-
-.tag {
-  padding: 20px;
 }
 
 body {
