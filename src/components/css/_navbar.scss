@@ -13,7 +13,7 @@
 }
 .nav-menu {
   margin: 0 auto;
-  max-width: 1144px;
+  max-width: 1280px;
   padding: 0 1.0875rem;
 }
 .nav-menu {
@@ -33,7 +33,7 @@
         text-decoration: none;
         padding: 20px;
         color: $thirdC;
-        font-size: 1.1em;
+        font-size: 2em;
         font-weight: bold;
       }
       a:hover {
@@ -128,6 +128,7 @@
       li {
         float: left;
         a {
+          font-size: 1.1em;
           padding: 20px 30px;
         }
       }
