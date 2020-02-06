@@ -14,9 +14,9 @@ const ProjectPreview = ({ slug, title, predesc, ImageData, tags }) => (
     <div className="tags">
       {tags.map(tag => {
         return (
-          <a href={tag} className={"tag " + tag}>
+          <Link to={"tags/" + tag} className={"tag " + tag}>
             {tag}
-          </a>
+          </Link>
         )
       })}
     </div>

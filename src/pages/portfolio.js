@@ -46,7 +46,7 @@ const PortfolioPage = () => {
             <ProjectPreview
               title={title}
               predesc={predesc}
-              slug={slug}
+              slug={"project/" + slug}
               ImageData={imageData}
               tags={tags}
             />

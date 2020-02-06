@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const result = await graphql(`
+  const project = await graphql(`
     {
       allProjectsJson {
         edges {
@@ -18,20 +18,47 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
+  const tags = await graphql(`
+    {
+      allProjectsJson {
+        edges {
+          node {
+            tags
+          }
+        }
+      }
+    }
+  `)
 
-  if (result.error) {
+  if (project.error) {
     reporter.panic("There was a problem loading your projects!")
     return
   }
+  if (tags.error) {
+    reporter.panic("There was a problem loading your tags!")
+    return
+  }
 
-  const projects = result.data.allProjectsJson.edges.map(({ node }) => node)
+  const sprojects = project.data.allProjectsJson.edges.map(({ node }) => node)
 
-  projects.forEach(project => {
+  sprojects.forEach(project => {
     actions.createPage({
-      path: project.slug,
+      path: "project/" + project.slug,
       component: require.resolve("./src/components/templates/project.js"),
       context: {
         slug: project.slug,
+      },
+    })
+  })
+
+  const stags = tags.data.allProjectsJson.edges.map(({ node }) => node)
+
+  stags.forEach(tag => {
+    actions.createPage({
+      path: "tags/" + tag.tags,
+      component: require.resolve("./src/components/templates/tags.js"),
+      context: {
+        slug: tag.tags,
       },
     })
   })
