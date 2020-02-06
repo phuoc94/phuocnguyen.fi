@@ -51,14 +51,27 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  const stags = tags.data.allProjectsJson.edges.map(({ node }) => node)
+  //all poject tags to array 2d
+  const ddtags = tags.data.allProjectsJson.edges
+    .map(({ node }) => node)
+    .map(({ tags }) => tags)
 
-  stags.forEach(tag => {
+  // each tag 1x
+  let ftag = []
+  ddtags.forEach(b => {
+    for (let i = 0; i < b.length; i++) {
+      if (ftag.indexOf(b[i]) < 0) {
+        ftag.push(b[i])
+      }
+    }
+  })
+
+  ftag.forEach(tag => {
     actions.createPage({
-      path: "tags/" + tag.tags,
+      path: "tags/" + tag,
       component: require.resolve("./src/components/templates/tags.js"),
       context: {
-        slug: tag.tags,
+        slug: tag,
       },
     })
   })
