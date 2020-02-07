@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
-import ReCAPTCHA from "react-google-recaptcha"
 
 const title = "Contact me"
 const ContactPage = () => (
@@ -11,12 +10,15 @@ const ContactPage = () => (
       <h1>{title}</h1>
       <div className="form">
         <form
-          name="JSX Form"
+          name="contact"
           method="POST"
-          data-netlify="true"
           data-netlify-recaptcha="true"
-          action="/thank-you"
+          data-netlify="true"
         >
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LdZqdYUAAAAALE7UwXWHToWldRPOOuWjdxh6n0E"
+          ></div>
           <input type="hidden" name="form-name" value="JSX Form" />
           <label>
             Name:
