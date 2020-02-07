@@ -9,7 +9,12 @@ const ContactPage = () => (
     <div className="contact">
       <h1>{title}</h1>
       <div className="form">
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
           <label>
             Name:
             <input type="text" name="name" id="name" required />
