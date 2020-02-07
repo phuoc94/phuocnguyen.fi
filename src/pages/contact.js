@@ -9,21 +9,24 @@ const ContactPage = () => (
     <div className="contact">
       <h1>{title}</h1>
       <div className="form">
-        <form name="contact" method="post" action="/thanks-you">
-          <p>
-            <label>
-              Email: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </p>
-          <div data-netlify-recaptcha="true"></div>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+        <form name="contact" method="post" action="/thank-you">
+          <label>
+            Name:
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label>
+            Subject:
+            <input type="text" name="subject" id="subject" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message" id="message" rows="5" required />
+          </label>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
