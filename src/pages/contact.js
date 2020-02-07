@@ -11,12 +11,13 @@ const ContactPage = () => (
       <h1>{title}</h1>
       <div className="form">
         <form
-          name="contact"
+          name="JSX Form"
           method="POST"
-          data-netlify-recaptcha="true"
           data-netlify="true"
+          data-netlify-recaptcha="true"
           action="/thank-you"
         >
+          <input type="hidden" name="form-name" value="JSX Form" />
           <label>
             Name:
             <input type="text" name="name" id="name" required />
