@@ -13,8 +13,7 @@ const ContactPage = () => (
           name="contact"
           method="post"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="#"
+          data-netlify-recaptcha="true"
         >
           <label>
             Name:
