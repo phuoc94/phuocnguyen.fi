@@ -9,12 +9,7 @@ const ContactPage = () => (
     <div className="contact">
       <h1>{title}</h1>
       <div className="form">
-        <form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
+        <form name="contact" method="POST" data-netlify="true">
           <label>
             Name:
             <input type="text" name="name" id="name" required />
