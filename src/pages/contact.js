@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
+import ReCAPTCHA from "react-google-recaptcha"
 
 const title = "Contact me"
 const ContactPage = () => (
@@ -12,8 +13,9 @@ const ContactPage = () => (
         <form
           name="contact"
           method="POST"
-          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           data-netlify="true"
+          action="/thank-you"
         >
           <label>
             Name:
@@ -31,6 +33,7 @@ const ContactPage = () => (
             Message:
             <textarea name="message" id="message" rows="5" required />
           </label>
+          <ReCAPTCHA sitekey="6LdZqdYUAAAAALE7UwXWHToWldRPOOuWjdxh6n0E" />
           <button type="submit">Send</button>
         </form>
       </div>
