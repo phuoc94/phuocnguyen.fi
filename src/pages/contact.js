@@ -34,7 +34,7 @@ const ContactPage = () => (
             Message:
             <textarea name="message" id="message" rows="5" required />
           </label>
-          <ReCAPTCHA sitekey="6LdZqdYUAAAAALE7UwXWHToWldRPOOuWjdxh6n0E" />
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Send</button>
         </form>
       </div>
