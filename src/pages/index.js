@@ -18,7 +18,7 @@ const IndexPage = () => (
           dolore id expedita labore. Deserunt quaerat dolor maiores quas
           doloremque quasi doloribus quo.
         </p>
-        <a href="resume">View resume</a>
+        <a href="../../cv.pdf">View resume</a>
         <Link to="contact">Get In Touch</Link>
       </div>
       <div className="f-about">
