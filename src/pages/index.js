@@ -3,6 +3,7 @@ import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
 import PortfolioPage from "./portfolio"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import BgVideo from "../images/bgvideo.webm"
 
 const title = "Home"
 const IndexPage = () => {
@@ -16,6 +17,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle={title}>
       <SEO title={title} />
+      <video loop autoPlay muted id="myVideo">
+        <source src={BgVideo} type="video/webm" />
+        <track kind="No Track" srcLang="en" />
+      </video>
       <div className="home">
         <div className="f-page">
           <h1>PHUOC NGUYEN</h1>

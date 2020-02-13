@@ -159,6 +159,7 @@
 
 .home .f-page {
   margin: 10%;
+  color: white;
 }
 
 .home .f-page .buttons {
@@ -186,6 +187,7 @@
 
 .home .f-about {
   margin: 10%;
+  color: white;
 }
 
 .home .f-about h1 {
@@ -197,9 +199,22 @@
   min-height: 0;
 }
 
+.home .portfolio .main h1 {
+  color: white;
+}
+
 .home .portfolio .nav-bar,
 .home .portfolio .footer {
   display: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
 }
 
 @media (min-width: 768px) {
