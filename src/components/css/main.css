@@ -172,9 +172,14 @@
   margin: 10%;
 }
 
+.home .f-page .buttons {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
 .home .f-page h1 {
   text-align: left;
-  font-size: 500%;
+  font-size: 2rem;
 }
 
 .home .f-page a {
@@ -185,7 +190,8 @@
           box-shadow: #6e96ff 0px 4px 0px -4px;
   border-radius: 50px;
   padding: 10px 20px;
-  margin-right: 1rem;
+  margin: 1rem;
+  margin-left: 0;
   text-decoration: none;
 }
 
@@ -205,6 +211,15 @@
 .home .portfolio .nav-bar,
 .home .portfolio .footer {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .home .f-page .buttons {
+    display: unset;
+  }
+  .home .f-page h1 {
+    font-size: 500%;
+  }
 }
 
 .projectsPreview {

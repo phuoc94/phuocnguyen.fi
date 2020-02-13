@@ -1,9 +1,12 @@
 .home {
   .f-page {
     margin: 10%;
+    .buttons {
+      display: inline-grid;
+    }
     h1 {
       text-align: left;
-      font-size: 500%;
+      font-size: 2rem;
     }
 
     a {
@@ -17,7 +20,8 @@
       box-shadow: rgb(110, 150, 255) 0px 4px 0px -4px;
       border-radius: 50px;
       padding: 10px 20px;
-      margin-right: 1rem;
+      margin: 1rem;
+      margin-left: 0;
       text-decoration: none;
     }
   }
@@ -35,6 +39,18 @@
     .nav-bar,
     .footer {
       display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    .f-page {
+      .buttons {
+        display: unset;
+      }
+      h1 {
+        font-size: 500%;
+      }
     }
   }
 }

@@ -10,16 +10,12 @@ const IndexPage = () => (
     <SEO title={title} />
     <div className="home">
       <div className="f-page">
-        <h1>I'm Phuoc Nguyen</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          pariatur, assumenda at fuga similique iusto rerum vitae nesciunt, iste
-          consequuntur magnam dolor molestias amet? Enim inventore laboriosam
-          dolore id expedita labore. Deserunt quaerat dolor maiores quas
-          doloremque quasi doloribus quo.
-        </p>
-        <a href="../../cv.pdf">View resume</a>
-        <Link to="contact">Get In Touch</Link>
+        <h1>PHUOC NGUYEN</h1>
+        <p>FRONT-END DEVELOPER</p>
+        <div className="buttons">
+          <a href="../../cv.pdf">View resume</a>
+          <Link to="contact">Get In Touch</Link>
+        </div>
       </div>
       <div className="f-about">
         <h3>little bit</h3>
