@@ -4,13 +4,9 @@
   z-index: 2;
 }
 
-.logo .gatsby-image-wrapper {
+.logo img {
   width: 92px;
   height: 60px;
-}
-
-.nav-bar {
-  background-color: white;
 }
 
 .nav-menu {
@@ -55,7 +51,6 @@
   max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  background: white;
 }
 
 .nav-menu .menu-icon {
@@ -131,20 +126,14 @@
 @media (min-width: 768px) {
   .logo {
     position: absolute;
-    border-radius: 0 0 10px 10px;
-    background-color: white;
-    padding: 15px;
-    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
-  .logo .gatsby-image-wrapper {
+  .logo img {
     width: 160px;
     height: 103.6px;
   }
   .nav-bar {
     height: 66px;
-    background-color: white;
   }
   .nav-menu ul li {
     float: left;

@@ -1,25 +1,14 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { Link } from "gatsby"
 import "../css/main.css"
+import logo from "../../images/logo.svg"
 
 const Menu = ({ siteTitle }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 160) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <div className="nav-bar">
       <nav className="nav-menu">
         <div className="logo">
-          <Image fluid={data.placeholderImage.childImageSharp.fluid} />
+          <img src={logo} alt="logo" />
         </div>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
