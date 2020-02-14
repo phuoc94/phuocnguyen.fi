@@ -1,13 +1,16 @@
 .home {
   .f-page {
-    margin: 10%;
+    margin: 0;
     color: white;
-    .buttons {
-      display: inline-grid;
-    }
+
     h1 {
       text-align: left;
-      font-size: 2rem;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 32px;
     }
 
     a {
@@ -32,6 +35,9 @@
     h1 {
       text-align: left;
     }
+    h3 {
+      margin: 0;
+    }
   }
   .portfolio {
     .main {
@@ -48,22 +54,31 @@
   }
 }
 
-#myVideo {
+.mask {
   position: fixed;
+  background: linear-gradient(rgba(47, 72, 88, 0.8), rgba(0, 0, 0, 0.8));
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -2;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -4;
+}
 @media (min-width: 768px) {
   .home {
     .f-page {
-      .buttons {
-        display: unset;
-      }
+      margin: 10%;
       h1 {
-        font-size: 500%;
+        font-size: 72px;
+        line-height: 80px;
       }
     }
   }

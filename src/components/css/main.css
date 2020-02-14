@@ -158,18 +158,19 @@
 }
 
 .home .f-page {
-  margin: 10%;
+  margin: 0;
   color: white;
-}
-
-.home .f-page .buttons {
-  display: -ms-inline-grid;
-  display: inline-grid;
 }
 
 .home .f-page h1 {
   text-align: left;
-  font-size: 2rem;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.home .f-page p {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .home .f-page a {
@@ -194,6 +195,10 @@
   text-align: left;
 }
 
+.home .f-about h3 {
+  margin: 0;
+}
+
 .home .portfolio .main {
   padding: 0;
   min-height: 0;
@@ -208,8 +213,10 @@
   display: none;
 }
 
-#myVideo {
+.mask {
   position: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 72, 88, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(47, 72, 88, 0.8), rgba(0, 0, 0, 0.8));
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -217,12 +224,22 @@
   z-index: -2;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -4;
+}
+
 @media (min-width: 768px) {
-  .home .f-page .buttons {
-    display: unset;
+  .home .f-page {
+    margin: 10%;
   }
   .home .f-page h1 {
-    font-size: 500%;
+    font-size: 72px;
+    line-height: 80px;
   }
 }
 
@@ -443,7 +460,7 @@ body {
 }
 
 .main h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: SharpSansDispNo1-Bold, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
