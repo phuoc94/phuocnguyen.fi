@@ -30,12 +30,12 @@
         display: block;
         text-decoration: none;
         padding: 20px;
-        color: $thirdC;
+        color: white;
         font-size: 2em;
         font-weight: bold;
       }
       a:hover {
-        background-color: #ddd;
+        text-decoration: underline;
       }
     }
   }

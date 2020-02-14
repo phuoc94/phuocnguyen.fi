@@ -37,13 +37,13 @@
   display: block;
   text-decoration: none;
   padding: 20px;
-  color: #00c6cf;
+  color: white;
   font-size: 2em;
   font-weight: bold;
 }
 
 .nav-menu ul li a:hover {
-  background-color: #ddd;
+  text-decoration: underline;
 }
 
 .nav-menu .nav-links {
@@ -159,6 +159,7 @@
 
 .home .f-page {
   margin: 0;
+  margin-bottom: 10%;
   color: white;
 }
 

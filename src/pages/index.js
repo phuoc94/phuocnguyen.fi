@@ -4,6 +4,7 @@ import SEO from "../components/querys/seo"
 import PortfolioPage from "./portfolio"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import BgVideo from "../images/bgvideo.webm"
+import poster from "../images/poster.png"
 
 const title = "Home"
 const IndexPage = () => {
@@ -17,7 +18,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle={title}>
       <SEO title={title} />
-      <video loop autoPlay muted id="myVideo">
+      <video loop autoPlay muted id="myVideo" poster={poster}>
         <source src={BgVideo} type="video/webm" />
         <track kind="No Track" srcLang="en" />
       </video>
@@ -39,10 +40,8 @@ const IndexPage = () => {
           <h3>little bit</h3>
           <h1>about me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            amet corrupti officia quia id aperiam, omnis eum pariatur autem
-            voluptates maxime sint neque iusto hic corporis, cupiditate a minus.
-            Tenetur.
+            Hello! my name is phuoc. I’am junior full stack developer who
+            currently lives in Turku, Finland.
           </p>
         </div>
       </div>
