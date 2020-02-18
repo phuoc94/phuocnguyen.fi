@@ -4,13 +4,11 @@ import Image from "gatsby-image"
 
 const ProjectPreview = ({ slug, title, predesc, ImageData, tags }) => (
   <div className="projectPreview">
-    <Link to={`/${slug}/`}>
-      <div>
-        <h2>{title}</h2>
-        <Image fluid={ImageData} alt={title} />
-        <p>{predesc}</p>
-      </div>
-    </Link>
+    <div>
+      <h2>{title}</h2>
+      <Image fluid={ImageData} alt={title} />
+      <p>{predesc}</p>
+    </div>
     <div className="tags">
       {tags.map(tag => {
         return (

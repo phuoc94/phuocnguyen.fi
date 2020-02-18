@@ -321,7 +321,7 @@
 }
 
 .projectPreview:hover {
-  cursor: pointer;
+  /*cursor: pointer;*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
           box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;
   -webkit-transition: all 0.3s ease 0s;
