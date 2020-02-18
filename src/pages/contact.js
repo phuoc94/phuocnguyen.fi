@@ -9,14 +9,8 @@ const ContactPage = () => (
     <div className="contact">
       <h1>{title}</h1>
       <div className="form">
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          action="/thank-you"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+        <form name="Contact Form" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="Contact Form" />
           <label>
             Name:
             <input type="text" name="name" id="name" required />
@@ -33,7 +27,7 @@ const ContactPage = () => (
             Message:
             <textarea name="message" id="message" rows="5" required />
           </label>
-          <button>Send</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
