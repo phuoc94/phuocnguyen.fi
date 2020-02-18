@@ -188,7 +188,7 @@
 }
 
 .home .f-about {
-  margin: 10%;
+  margin-top: 10%;
   color: white;
 }
 
@@ -236,7 +236,7 @@
 
 @media (min-width: 768px) {
   .home .f-page {
-    margin: 10%;
+    margin-top: 10%;
   }
   .home .f-page h1 {
     font-size: 72px;
@@ -272,12 +272,14 @@
 .projectPreview h2 {
   padding: 18px;
   margin: 0;
+  color: black;
 }
 
 .projectPreview p {
   padding: 24px;
   margin: 0;
   height: 100px;
+  color: black;
 }
 
 .projectPreview .tags {
@@ -438,8 +440,13 @@
   }
 }
 
+* {
+  font-family: SharpSansDispNo1-Bold, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
 body {
-  background: #eaeaea;
+  background: #2f4858;
 }
 
 ::-webkit-scrollbar {
@@ -461,7 +468,6 @@ body {
 }
 
 .main h1 {
-  font-family: SharpSansDispNo1-Bold, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
