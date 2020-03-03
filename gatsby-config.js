@@ -30,7 +30,7 @@ module.exports = {
       options: {
         name: `phuoc-nguyen-portfolio`,
         short_name: `Phuoc Nguyen`,
-        start_url: `https://phuocnguyen.fi/`,
+        start_url: `/`,
         background_color: `#eaeaea`,
         theme_color: `#eaeaea`,
         display: `standalone`,
