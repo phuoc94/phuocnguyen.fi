@@ -1,35 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Navbar, Nav } from "react-bootstrap"
 import "../css/main.css"
 import logo from "../../images/logo.svg"
 
 const Menu = ({ siteTitle }) => {
   return (
-    <div className="nav-bar">
-      <nav className="nav-menu">
-        <div className="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label className="menu-icon" htmlFor="menu-btn">
-          <span className="nav-icon"></span>
-        </label>
-        <ul className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/portfolio/">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/about/">About</Link>
-          </li>
-          <li>
-            <Link to="/contact/">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <Navbar bg="dark" variant="dark" expand="sm">
+      <div className="container">
+        <Navbar.Brand href="/">
+          <img
+            alt=""
+            src={logo}
+            width="75"
+            height="50"
+            className="d-inline-block align-top"
+          />{" "}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+          <Nav>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/portfolio/">Portfolio</Nav.Link>
+            <Nav.Link href="/about/">About</Nav.Link>
+            <Nav.Link href="/contact/">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
   )
 }
 export default Menu
