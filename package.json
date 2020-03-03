@@ -7,6 +7,7 @@
   "dependencies": {
     "@types/react": "^16.9.20",
     "ajv": "^6.11.0",
+    "bootstrap": "^4.4.1",
     "bufferutil": "4.0.1",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -23,6 +24,7 @@
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
