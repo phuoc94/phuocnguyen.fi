@@ -25,39 +25,27 @@ const IndexPage = () => {
   return (
     <Layout pageTitle={title}>
       <SEO title={title} />
-      <video
-        loop
-        autoPlay
-        muted
-        id="myVideo"
-        poster={data.placeholderImage.childImageSharp.fluid}
-      >
-        <source src={BgVideo} type="video/webm" />
-        <track kind="No Track" srcLang="en" />
-      </video>
-      <div className="mask"></div>
-      <div className="home">
-        <div className="f-page">
-          <h1>I Build Amazing experiences</h1>
-          <p>Web Developer From Turku, Finland</p>
-          <div className="buttons">
-            <a href={data.file.publicURL}>View resume</a>
-            <Link to="contact">Get In Touch</Link>
+      <header>
+        <div className="overlay"></div>
+        <video
+          loop
+          autoPlay
+          muted
+          id="myVideo"
+          poster={data.placeholderImage.childImageSharp.fluid}
+        >
+          <source src={BgVideo} type="video/webm" />
+          <track kind="No Track" srcLang="en" />
+        </video>
+        <div className="container h-100">
+          <div className="d-flex h-100 text-center align-items-center">
+            <div className="w-100 text-white">
+              <h1 className="display-3">I Build Amazing experiences</h1>
+              <p className="lead mb-0">Web Developer From Turku, Finland</p>
+            </div>
           </div>
         </div>
-
-        <div className="portfolio">
-          <PortfolioPage />
-        </div>
-        <div className="f-about">
-          <h3>little bit</h3>
-          <h1>about me</h1>
-          <p>
-            Hello! my name is phuoc. I’am junior full stack developer who
-            currently lives in Turku, Finland.
-          </p>
-        </div>
-      </div>
+      </header>
     </Layout>
   )
 }

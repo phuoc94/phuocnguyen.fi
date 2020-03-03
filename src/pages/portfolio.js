@@ -32,26 +32,29 @@ const PortfolioPage = () => {
   const projects = data.allProjectsJson.edges
   return (
     <Layout pageTitle={title}>
-      <SEO title={title} />
-      <h1>{title}</h1>
-      <div className="projectsPreview">
-        {projects.map(({ node: project }) => {
-          const title = project.title
-          const predesc = project.predesc
-          const slug = project.slug
-          const imageData = project.image.childImageSharp.fluid
-          const tags = project.tags
+      <div className="container">
+        <SEO title={title} />
+        <h1>{title}</h1>
 
-          return (
-            <ProjectPreview
-              title={title}
-              predesc={predesc}
-              slug={"project/" + slug}
-              ImageData={imageData}
-              tags={tags}
-            />
-          )
-        })}
+        <div className="projectsPreview">
+          {projects.map(({ node: project }) => {
+            const title = project.title
+            const predesc = project.predesc
+            const slug = project.slug
+            const imageData = project.image.childImageSharp.fluid
+            const tags = project.tags
+
+            return (
+              <ProjectPreview
+                title={title}
+                predesc={predesc}
+                slug={"project/" + slug}
+                ImageData={imageData}
+                tags={tags}
+              />
+            )
+          })}
+        </div>
       </div>
     </Layout>
   )

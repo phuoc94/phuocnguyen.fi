@@ -1,0 +1,14 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+@media (min-width: 768px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    h1 {
+      grid-column: 1 / span 2;
+    }
+  }
+}
