@@ -4,14 +4,14 @@
   color: white;
 }
 body {
-  background: $sColor;
+  background: $Color2;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-thumb {
-  background: $secondC;
+  background: $Color1;
   border-radius: 6px;
   box-shadow: 9px 9px 16px rgb(163, 177, 198);
 }

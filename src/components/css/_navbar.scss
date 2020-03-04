@@ -1,7 +1,17 @@
 @import "variables";
-
+.navbar {
+  font-size: 26px;
+}
 .navbar-brand {
   img {
     margin: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .navbar {
+    font-size: 32px;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
   }
 }
