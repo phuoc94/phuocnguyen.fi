@@ -19,8 +19,10 @@ const Layout = ({ children, pageTitle }) => {
     <>
       <Menu siteTitle={data.site.siteMetadata.title} />
       <main className="main">{children}</main>
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Phuoc Nguyen</p>
+      <footer id="sticky-footer" className="py-4 bg-dark text-white-50">
+        <div className="container text-center">
+          <small>Copyright © {new Date().getFullYear()} Phuoc Nguyen</small>
+        </div>
       </footer>
     </>
   )

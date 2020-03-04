@@ -3,6 +3,20 @@
   font-family: $font-stack;
   color: white;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
 body {
   background: $Color2;
 }
@@ -14,16 +28,4 @@ body {
   background: $Color1;
   border-radius: 6px;
   box-shadow: 9px 9px 16px rgb(163, 177, 198);
-}
-
-.footer {
-  padding: 20px 0;
-  width: 100%;
-  text-align: center;
-  line-height: 30px;
-  p {
-    margin: 0;
-  }
-}
-@media (min-width: 768px) {
 }
