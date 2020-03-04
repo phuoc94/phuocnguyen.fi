@@ -30,9 +30,7 @@ const ContactPage = () => (
                       name="name"
                       className="form-control"
                     />
-                    <label for="name" className="">
-                      Your name
-                    </label>
+                    <label htmlFor="name">Your name</label>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -43,9 +41,7 @@ const ContactPage = () => (
                       name="email"
                       className="form-control"
                     />
-                    <label for="email" className="">
-                      Your email
-                    </label>
+                    <label htmlFor="email">Your email</label>
                   </div>
                 </div>
               </div>
@@ -59,9 +55,7 @@ const ContactPage = () => (
                       name="subject"
                       className="form-control"
                     />
-                    <label for="subject" className="">
-                      Subject
-                    </label>
+                    <label htmlFor="subject">Subject</label>
                   </div>
                 </div>
               </div>
@@ -76,7 +70,7 @@ const ContactPage = () => (
                       rows="2"
                       className="form-control md-textarea"
                     ></textarea>
-                    <label for="message">Your message</label>
+                    <label htmlFor="message">Your message</label>
                   </div>
                 </div>
               </div>
