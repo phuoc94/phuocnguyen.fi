@@ -12,9 +12,9 @@ const ContactPage = () => (
           Contact us
         </h2>
         <p className="text-center w-responsive mx-auto mb-5">
-          Do you have any questions? Please do not hesitate to contact us
-          directly. Our team will come back to you within a matter of hours to
-          help you.
+          Do you have any questions? Please do not hesitate to contact me
+          directly. I will come back to you within a matter of hours to help
+          you.
         </p>
 
         <div className="row">
