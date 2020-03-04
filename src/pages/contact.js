@@ -74,13 +74,13 @@ const ContactPage = () => (
                   </div>
                 </div>
               </div>
+              <div className="text-center text-md-left">
+                <button type="submit" className="btn btn-primary">
+                  Send
+                </button>
+              </div>
             </form>
 
-            <div className="text-center text-md-left">
-              <button type="submit" className="btn btn-primary">
-                Send
-              </button>
-            </div>
             <div className="status"></div>
           </div>
           <div className="col-md-3 text-center">
