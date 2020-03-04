@@ -20,24 +20,28 @@ const AboutPage = () => {
   return (
     <Layout pageTitle={title}>
       <div className="container">
-        <SEO title={title} />
-        <div className="about">
-          <h1>{title}</h1>
-          <div className="left">
-            <p>
-              Hello! my name is phuoc. I’am junior full stack developer who
-              currently lives in Turku, Finland.
-            </p>
-            <p>Currently I'm looking for a job as developer.</p>
-            <p>
-              I'm really interested in Technology & solving technical problems.
-            </p>
+        <section className="mb-4">
+          <h2 className="h1-responsive font-weight-bold text-center my-4">
+            About Me
+          </h2>
+
+          <div className="row">
+            <div className="col-md-6">
+              <Image fluid={data.placeholderImage.childImageSharp.fluid} />
+            </div>
+            <div className="col-md-6">
+              <p>
+                Hello! my name is phuoc. I’am junior full stack developer who
+                currently lives in Turku, Finland.
+              </p>
+              <p>Currently I'm looking for a job as developer.</p>
+              <p>
+                I'm really interested in Technology & solving technical
+                problems.
+              </p>
+            </div>
           </div>
-          <div className="right">
-            {" "}
-            <Image fluid={data.placeholderImage.childImageSharp.fluid} />
-          </div>
-        </div>
+        </section>
       </div>
     </Layout>
   )
