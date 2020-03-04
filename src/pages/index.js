@@ -40,7 +40,9 @@ const IndexPage = () => {
         <div className="container h-100">
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 text-white">
-              <h1 className="display-3">I Build Amazing experiences</h1>
+              <h1 className="display-4 h1-responsive font-weight-bold">
+                I Build Amazing experiences
+              </h1>
               <p className="lead mb-0">Web Developer From Turku, Finland</p>
             </div>
           </div>

@@ -42,15 +42,6 @@ header .container {
   z-index: 2;
 }
 
-header .container h1 {
-  font-size: 72px;
-}
-
-header .container h1,
-header .container p {
-  font-weight: bold;
-}
-
 header .overlay {
   position: absolute;
   top: 0;

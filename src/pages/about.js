@@ -20,6 +20,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle={title}>
       <div className="container">
+        <SEO title={title} />
         <section className="mb-4">
           <h2 className="h1-responsive font-weight-bold text-center my-4">
             About Me

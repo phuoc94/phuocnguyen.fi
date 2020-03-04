@@ -25,13 +25,6 @@ header video {
 header .container {
   position: relative;
   z-index: 2;
-  h1 {
-    font-size: 72px;
-  }
-  h1,
-  p {
-    font-weight: bold;
-  }
 }
 
 header .overlay {

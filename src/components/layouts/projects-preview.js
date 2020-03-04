@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
-import { Card, Button } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 const ProjectPreview = ({ slug, title, predesc, ImageData, tags }) => (
   <Card className="projectPreview">
