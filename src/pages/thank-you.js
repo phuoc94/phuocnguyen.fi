@@ -4,8 +4,10 @@ import Layout from "../components/layouts/layout"
 const title = "Thank you"
 const ThankYouPage = () => (
   <Layout pageTitle={title}>
-    <h1>Contact</h1>
-    <p>Thank you for your submission!</p>
+    <div className="container">
+      <h1>Contact</h1>
+      <p>Thank you for your submission!</p>
+    </div>
   </Layout>
 )
 

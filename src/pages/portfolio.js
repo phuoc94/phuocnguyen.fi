@@ -34,7 +34,9 @@ const PortfolioPage = () => {
     <Layout pageTitle={title}>
       <div className="container">
         <SEO title={title} />
-        <h1>{title}</h1>
+        <h2 className="h1-responsive font-weight-bold text-center my-4">
+          {title}
+        </h2>
 
         <div className="projectsPreview">
           {projects.map(({ node: project }) => {
