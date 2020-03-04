@@ -2,8 +2,9 @@ import React from "react"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
 //import PortfolioPage from "./portfolio"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import BgVideo from "../images/bgvideo.webm"
+import { Button } from "react-bootstrap"
 
 const title = "Home"
 const IndexPage = () => {
@@ -44,6 +45,16 @@ const IndexPage = () => {
                 I Build Amazing experiences
               </h1>
               <p className="lead mb-0">Web Developer From Turku, Finland</p>
+              <Link to="contact">
+                <Button className="mx-3 my-2" variant="primary">
+                  Get In Touch
+                </Button>
+              </Link>
+              <a href={data.file.publicURL}>
+                <Button className="mx-3 my-2" variant="primary">
+                  View resume
+                </Button>
+              </a>
             </div>
           </div>
         </div>
