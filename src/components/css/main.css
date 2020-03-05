@@ -115,6 +115,10 @@ header .overlay {
   background-color: #703b97;
 }
 
+.projectPreview .tags .bootstrap {
+  background-color: #563d7c;
+}
+
 .projectPreview .tags .python {
   background-image: -webkit-gradient(linear, left top, right top, from(#2f6b99), to(#f7d652));
   background-image: linear-gradient(90deg, #2f6b99, #f7d652);
