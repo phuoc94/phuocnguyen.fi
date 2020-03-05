@@ -18,19 +18,11 @@
     rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
   border-radius: 2px;
   background: rgb(255, 255, 255);
-  h2 {
-    padding: 18px;
-    margin: 0;
-    color: black;
-  }
+  .card-title,
   p {
-    padding: 24px;
-    margin: 0;
-    height: 100px;
     color: black;
   }
   .tags {
-    padding: 18px;
     a {
       color: white;
     }

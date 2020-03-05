@@ -78,21 +78,9 @@ header .overlay {
   background: white;
 }
 
-.projectPreview h2 {
-  padding: 18px;
-  margin: 0;
-  color: black;
-}
-
+.projectPreview .card-title,
 .projectPreview p {
-  padding: 24px;
-  margin: 0;
-  height: 100px;
   color: black;
-}
-
-.projectPreview .tags {
-  padding: 18px;
 }
 
 .projectPreview .tags a {
