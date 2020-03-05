@@ -10,7 +10,7 @@ const AboutPage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 160) {
+          fluid(maxWidth: 540) {
             ...GatsbyImageSharpFluid
           }
         }
