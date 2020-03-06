@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
-//import PortfolioPage from "./portfolio"
+import PortfolioPage from "./portfolio"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import BgVideo from "../images/bgvideo.webm"
 import { Button } from "react-bootstrap"
@@ -59,6 +59,9 @@ const IndexPage = () => {
           </div>
         </div>
       </header>
+      <div className="portfolio">
+        <PortfolioPage />
+      </div>
     </Layout>
   )
 }

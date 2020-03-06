@@ -53,6 +53,11 @@ header .overlay {
   z-index: 1;
 }
 
+.portfolio .navbar,
+.portfolio #sticky-footer {
+  display: none;
+}
+
 .projectsPreview {
   display: -ms-grid;
   display: grid;
