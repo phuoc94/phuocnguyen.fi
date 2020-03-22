@@ -4,7 +4,7 @@ import Layout from "../components/layouts/layout"
 import SEO from "../components/querys/seo"
 import ProjectPreview from "../components/layouts/projects-preview"
 
-const title = "My Work"
+const title = "Portfolio"
 const PortfolioPage = () => {
   const data = useStaticQuery(graphql`
     query {
