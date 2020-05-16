@@ -5,8 +5,18 @@
     "url": "https://phuocnguyen.fi",
     "image": "../images/projects/logo.png",
     "predesc": "Portfolio Phuoc Nguyen",
-    "description": "Sit fugiat labore consectetur fugiat est et occaecat. Magna do officia id sunt velit. Ipsum qui culpa excepteur incididunt aliqua nostrud.",
+    "description": "Portfolio Phuoc Nguyen",
     "tags": ["portfolio", "react", "gatsby", "bootstrap"],
+    "info": "not done yet"
+  },
+  {
+    "title": "Valtakunnallinen humanistinen verkko-opetus",
+    "slug": "Valtakunnallinen-humanistinen-verkko-opetus",
+    "url": "https://verkko-opetus.utu.fi/",
+    "image": "../images/projects/verkko-opetus.png",
+    "predesc": "I'm part of team doing this while im worked at university of turku",
+    "description": "",
+    "tags": ["PHP", "MariaDB"],
     "info": "not done yet"
   },
   {
@@ -15,7 +25,7 @@
     "url": "#",
     "image": "../images/projects/sudoku.jpg",
     "predesc": "Sudoku / -solver game make with python pygame",
-    "description": "Sit fugiat labore consectetur fugiat est et occaecat. Magna do officia id sunt velit. Ipsum qui culpa excepteur incididunt aliqua nostrud.",
+    "description": "Sudoku / -solver game make with python pygame",
     "tags": ["games", "python", "pygame"],
     "info": "not done yet"
   }

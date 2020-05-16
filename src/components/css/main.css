@@ -126,6 +126,14 @@ header .overlay {
   background-color: #166079;
 }
 
+.projectPreview .tags .PHP {
+  background-color: #8892bf;
+}
+
+.projectPreview .tags .MariaDB {
+  background-color: #c0765a;
+}
+
 .projectPreview:hover {
   /*cursor: pointer;*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;

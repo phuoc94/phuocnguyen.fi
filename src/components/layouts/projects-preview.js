@@ -3,9 +3,11 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { Card } from "react-bootstrap"
 
-const ProjectPreview = ({ slug, title, predesc, ImageData, tags }) => (
+const ProjectPreview = ({ slug, title, predesc, ImageData, tags, url }) => (
   <Card className="projectPreview">
-    <Image fluid={ImageData} alt={title} />
+    <a href={url}>
+      <Image fluid={ImageData} alt={title} />
+    </a>
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{predesc}</Card.Text>

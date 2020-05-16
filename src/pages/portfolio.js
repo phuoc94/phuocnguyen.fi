@@ -43,6 +43,7 @@ const PortfolioPage = () => {
             const title = project.title
             const predesc = project.predesc
             const slug = project.slug
+            const url = project.url
             const imageData = project.image.childImageSharp.fluid
             const tags = project.tags
 
@@ -53,6 +54,7 @@ const PortfolioPage = () => {
                 slug={"project/" + slug}
                 ImageData={imageData}
                 tags={tags}
+                url={url}
               />
             )
           })}

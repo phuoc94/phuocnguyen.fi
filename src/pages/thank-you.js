@@ -6,7 +6,7 @@ const ThankYouPage = () => (
   <Layout pageTitle={title}>
     <div className="container">
       <h1>Contact</h1>
-      <p>Thank you for your submission!</p>
+      <p>Thanks you for contacting!</p>
     </div>
   </Layout>
 )
