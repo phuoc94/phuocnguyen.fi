@@ -55,6 +55,7 @@ const PortfolioPage = () => {
                 ImageData={imageData}
                 tags={tags}
                 url={url}
+                key={slug}
               />
             )
           })}

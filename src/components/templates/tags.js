@@ -28,10 +28,9 @@ export const query = graphql`
 
 const TagsTemplate = ({ data }) => {
   const projects = data.allProjectsJson.edges
-  console.log(projects[0].title)
+  console.log(projects[0])
   return (
     <Layout>
-      <h1>{projects[0].slug}</h1>
       <div className="projectsPreview">
         {projects.map(({ node: project }) => {
           const title = project.title
@@ -39,7 +38,6 @@ const TagsTemplate = ({ data }) => {
           const slug = project.slug
           const imageData = project.image.childImageSharp.fluid
           const tags = project.tags
-
           return (
             <ProjectPreview
               title={title}

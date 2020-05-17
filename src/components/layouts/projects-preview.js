@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { Card } from "react-bootstrap"
 
@@ -14,9 +13,9 @@ const ProjectPreview = ({ slug, title, predesc, ImageData, tags, url }) => (
       <div className="tags">
         {tags.map(tag => {
           return (
-            <Link to={"tags/" + tag} className={"tag " + tag}>
+            <a href={"tags/" + tag} key={tag} className={"tag " + tag}>
               {tag}
-            </Link>
+            </a>
           )
         })}
       </div>

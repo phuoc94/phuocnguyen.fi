@@ -45,7 +45,7 @@ const IndexPage = () => {
                 I Build Amazing experiences
               </h1>
               <p className="lead mb-0">Web Developer From Turku, Finland</p>
-              <Link to="contact">
+              <Link to="/contact">
                 <Button className="mx-3 my-2" variant="primary">
                   Get In Touch
                 </Button>
