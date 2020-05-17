@@ -45,6 +45,7 @@ const TagsTemplate = ({ data }) => {
               slug={"project/" + slug}
               ImageData={imageData}
               tags={tags}
+              key={slug}
             />
           )
         })}
