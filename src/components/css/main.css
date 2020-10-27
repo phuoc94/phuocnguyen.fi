@@ -134,6 +134,10 @@ header .overlay {
   background-color: #c0765a;
 }
 
+.projectPreview .tags .Xd {
+  background-color: #470137;
+}
+
 .projectPreview:hover {
   /*cursor: pointer;*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 8px 26px 0px;

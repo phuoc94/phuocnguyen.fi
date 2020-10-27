@@ -6,7 +6,7 @@
     "image": "../images/projects/logo.png",
     "predesc": "Portfolio Phuoc Nguyen",
     "description": "Portfolio Phuoc Nguyen",
-    "tags": ["portfolio", "react", "gatsby", "bootstrap"],
+    "tags": ["portfolio", "react", "gatsby", "bootstrap", "scss"],
     "info": "not done yet"
   },
   {
@@ -17,16 +17,37 @@
     "predesc": "I'm part of team doing this while im worked at university of turku",
     "description": "",
     "tags": ["PHP", "MariaDB"],
-    "info": "not done yet"
+    "info": "info not done yet"
   },
+  {
+    "title": "web scraping",
+    "slug": "io-tech-webscraping",
+    "url": "https://github.com/phuoc94/io-tech-web-scraping",
+    "image": "../images/projects/scraping.jpg",
+    "predesc": "scraping io-tech website get new selling post",
+    "description": "scraping io-tech website get new selling post",
+    "tags": ["python", "webScraping"],
+    "info": "info not done yet"
+  },
+  {
+    "title": "E-commerce",
+    "slug": "demo-ecommerce",
+    "url": "https://xd.adobe.com/view/2d806d4a-f816-470a-97da-745ebea8565b-78d3/",
+    "image": "../images/projects/ecommerce.png",
+    "predesc": "Protype of clothing ecommerce",
+    "description": "Protype of clothing ecommerce",
+    "tags": ["prototype", "Xd"],
+    "info": "info not done yet"
+  },
+  
   {
     "title": "Sudoku",
     "slug": "sukodu",
     "url": "#",
     "image": "../images/projects/sudoku.jpg",
-    "predesc": "Sudoku / -solver game make with python pygame",
-    "description": "Sudoku / -solver game make with python pygame",
+    "predesc": "Sudoku / -solver and game make with python pygame",
+    "description": "Sudoku / -solver and game make with python pygame",
     "tags": ["games", "python", "pygame"],
-    "info": "not done yet"
+    "info": "info not done yet"
   }
 ]
