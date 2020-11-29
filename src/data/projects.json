@@ -6,8 +6,7 @@
     "image": "../images/projects/logo.png",
     "predesc": "Portfolio Phuoc Nguyen",
     "description": "Portfolio Phuoc Nguyen",
-    "tags": ["portfolio", "react", "gatsby", "bootstrap", "scss"],
-    "info": "not done yet"
+    "tags": ["portfolio", "react", "gatsby", "bootstrap", "scss"]
   },
   {
     "title": "Valtakunnallinen humanistinen verkko-opetus",
@@ -16,8 +15,7 @@
     "image": "../images/projects/verkko-opetus.png",
     "predesc": "I'm part of team doing this while im worked at university of turku",
     "description": "",
-    "tags": ["PHP", "MariaDB"],
-    "info": "info not done yet"
+    "tags": ["PHP", "MariaDB"]
   },
   {
     "title": "web scraping",
@@ -26,8 +24,7 @@
     "image": "../images/projects/scraping.jpg",
     "predesc": "scraping io-tech website get new selling post",
     "description": "scraping io-tech website get new selling post",
-    "tags": ["python", "webScraping"],
-    "info": "info not done yet"
+    "tags": ["python", "webScraping"]
   },
   {
     "title": "E-commerce",
