@@ -16,7 +16,7 @@
 
     ```shell
     # clone a Gatsby portfolio site using the git
-    git clone https://github.com/phuoc94/gatsby-portfolio.git
+    git clone https://github.com/phuoc94/phuocnguyen.fi.git
     ```
 
 1.  **Start developing.**
