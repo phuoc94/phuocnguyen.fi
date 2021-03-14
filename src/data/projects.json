@@ -18,6 +18,15 @@
     "tags": ["PHP", "MariaDB"]
   },
   {
+    "title": "T&T Viet Food",
+    "slug": "TT-viet-Food",
+    "url": "https://www.ttvietfood.fi",
+    "image": "../images/projects/ttvietfood.png",
+    "predesc": "",
+    "description": "",
+    "tags": ["react", "nextjs", "localization"]
+  },
+  {
     "title": "web scraping",
     "slug": "io-tech-webscraping",
     "url": "https://github.com/phuoc94/io-tech-web-scraping",

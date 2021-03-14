@@ -50,11 +50,6 @@ const IndexPage = () => {
                   Get In Touch
                 </Button>
               </Link>
-              <a href={data.file.publicURL}>
-                <Button className="mx-3 my-2" variant="primary">
-                  View resume
-                </Button>
-              </a>
             </div>
           </div>
         </div>
