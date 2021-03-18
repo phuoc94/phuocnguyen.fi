@@ -42,9 +42,9 @@ const IndexPage = () => {
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 text-white">
               <h1 className="display-4 h1-responsive font-weight-bold">
-                I Build Amazing experiences
+                Fullstack Developer
               </h1>
-              <p className="lead mb-0">Web Developer From Turku, Finland</p>
+              <p className="lead mb-0">From Turku, Finland</p>
               <Link to="/contact">
                 <Button className="mx-3 my-2" variant="primary">
                   Get In Touch
