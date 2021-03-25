@@ -36,6 +36,15 @@
     "tags": ["python", "webScraping"]
   },
   {
+    "title": "Wiisari",
+    "slug": "Wiisari",
+    "url": "https://github.com/phuoc94/wiisari",
+    "image": "../images/projects/wiisari-logo.png",
+    "predesc": "Wiisari is a web-based timeclock system.",
+    "description": "",
+    "tags": ["PHP", "MySQL"]
+  },
+  {
     "title": "E-commerce",
     "slug": "demo-ecommerce",
     "url": "https://xd.adobe.com/view/2d806d4a-f816-470a-97da-745ebea8565b-78d3/",
@@ -45,7 +54,6 @@
     "tags": ["prototype", "Xd"],
     "info": "info not done yet"
   },
-  
   {
     "title": "Sudoku",
     "slug": "sukodu",
