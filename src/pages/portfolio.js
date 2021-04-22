@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layouts/layout"
-import SEO from "../components/querys/seo"
+import Seo from "../components/querys/seo"
 import ProjectPreview from "../components/layouts/projects-preview"
 
 const title = "Portfolio"
@@ -33,7 +33,7 @@ const PortfolioPage = () => {
   return (
     <Layout pageTitle={title}>
       <div className="container">
-        <SEO title={title} />
+        <Seo title={title} />
         <h2 className="h1-responsive font-weight-bold text-center my-4">
           {title}
         </h2>

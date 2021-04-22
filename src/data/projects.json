@@ -15,7 +15,7 @@
     "image": "../images/projects/verkko-opetus.png",
     "predesc": "I'm part of team doing this while im worked at university of turku",
     "description": "",
-    "tags": ["PHP", "MariaDB"]
+    "tags": ["PHP", "MariaDB", "MVC"]
   },
   {
     "title": "T&T Viet Food",
@@ -52,16 +52,6 @@
     "predesc": "Protype of clothing ecommerce",
     "description": "Protype of clothing ecommerce",
     "tags": ["prototype", "Xd"],
-    "info": "info not done yet"
-  },
-  {
-    "title": "Sudoku",
-    "slug": "sukodu",
-    "url": "#",
-    "image": "../images/projects/sudoku.jpg",
-    "predesc": "Sudoku / -solver and game make with python pygame",
-    "description": "Sudoku / -solver and game make with python pygame",
-    "tags": ["games", "python", "pygame"],
     "info": "info not done yet"
   }
 ]

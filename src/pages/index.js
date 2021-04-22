@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
-import SEO from "../components/querys/seo"
+import Seo from "../components/querys/seo"
 import PortfolioPage from "./portfolio"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import BgVideo from "../images/bgvideo.webm"
@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle={title}>
-      <SEO title={title} />
+      <Seo title={title} />
       <header>
         <div className="overlay"></div>
         <video

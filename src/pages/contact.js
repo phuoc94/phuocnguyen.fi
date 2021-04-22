@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
-import SEO from "../components/querys/seo"
+import Seo from "../components/querys/seo"
 
 const title = "Contact me"
 const ContactPage = () => (
   <Layout pageTitle={title}>
-    <SEO title={title} />
+    <Seo title={title} />
     <div className="container">
       <section className="mb-4">
         <h2 className="h1-responsive font-weight-bold text-center my-4">
