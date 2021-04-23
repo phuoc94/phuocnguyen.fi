@@ -5177,9 +5177,9 @@ gatsby-page-utils@^1.3.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-catch-links@^2.1.25:
-  version "2.10.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.10.0.tgz"
+gatsby-plugin-catch-links@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.3.0.tgz#cf22d4188714f377f835a62b4b4d0dda7804df07"
   dependencies:
     "@babel/runtime" "^7.12.5"
     escape-string-regexp "^1.0.5"
