@@ -5451,9 +5451,9 @@ gatsby-transformer-sharp@^2.3.13:
     semver "^7.3.4"
     sharp "^0.27.0"
 
-gatsby@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.4.1.tgz#ac92ac24a39764a4751e8fd58d799d3a66fe0f96"
+gatsby@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.4.2.tgz#cb14f70f8861b72d8cf7f77237580d88f939d1e6"
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.12.3"

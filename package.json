@@ -7,7 +7,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap": "^4.4.1",
-    "gatsby": "^3.4.1",
+    "gatsby": "^3.4.2",
     "gatsby-image": "^3.4.0",
     "gatsby-plugin-catch-links": "^3.4.0",
     "gatsby-plugin-manifest": "^3.4.0",
