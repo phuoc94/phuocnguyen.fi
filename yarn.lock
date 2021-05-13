@@ -5173,9 +5173,9 @@ gatsby-graphiql-explorer@^1.4.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-image@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.4.0.tgz#7fb3f2f18537f34ad9b8d4f3ec1737d437aa269c"
+gatsby-image@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.5.0.tgz#fe76d1d5638bdbe1255c2226a1b00539887af798"
   dependencies:
     "@babel/runtime" "^7.12.5"
     object-fit-images "^3.2.4"
