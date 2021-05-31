@@ -5137,7 +5137,7 @@ gatsby-core-utils@^1.10.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.5.0, gatsby-core-utils@^2.6.0:
+gatsby-core-utils@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.6.0.tgz#4653995f3640b56fe218a20da6458cfe0bffcdfb"
   dependencies:
@@ -5198,13 +5198,13 @@ gatsby-plugin-catch-links@^3.6.0:
     "@babel/runtime" "^7.12.5"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-manifest@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.5.0.tgz#0c6ad80d570f1c312cb46a2dfd2f14f966e2e4a9"
+gatsby-plugin-manifest@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.6.0.tgz#e7ca7d51daea1b9bfa358663b891a6a9673e0bf8"
   dependencies:
     "@babel/runtime" "^7.12.5"
-    gatsby-core-utils "^2.5.0"
-    gatsby-plugin-utils "^1.5.0"
+    gatsby-core-utils "^2.6.0"
+    gatsby-plugin-utils "^1.6.0"
     semver "^7.3.5"
     sharp "^0.28.1"
 
@@ -5284,7 +5284,7 @@ gatsby-plugin-typescript@^3.6.0:
     "@babel/runtime" "^7.12.5"
     babel-plugin-remove-graphql-queries "^3.6.0"
 
-gatsby-plugin-utils@^1.5.0, gatsby-plugin-utils@^1.6.0:
+gatsby-plugin-utils@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.6.0.tgz#4cb050009caf0b0add15ecc81d473c438e7115e9"
   dependencies:
