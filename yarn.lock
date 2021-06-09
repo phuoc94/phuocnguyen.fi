@@ -5187,11 +5187,11 @@ gatsby-page-utils@^1.6.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-catch-links@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.6.0.tgz#c2162b110e19b33d26f554cdadcdedbd760c7242"
+gatsby-plugin-catch-links@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.7.0.tgz#26ac0dc1019b67c067f3a733787ecc02642ad91e"
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.0"
     escape-string-regexp "^1.0.5"
 
 gatsby-plugin-manifest@^3.6.0:
