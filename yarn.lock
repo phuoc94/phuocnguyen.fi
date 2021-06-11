@@ -5268,7 +5268,7 @@ gatsby-core-utils@^1.10.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.6.0, gatsby-core-utils@^2.7.0:
+gatsby-core-utils@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.7.0.tgz#b73a152920c8459af35412c49f9ec0df67c70fe6"
   dependencies:
@@ -5287,9 +5287,9 @@ gatsby-graphiql-explorer@^1.7.0:
   dependencies:
     "@babel/runtime" "^7.14.0"
 
-gatsby-image@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.7.0.tgz#b098454283f2f5017571aff0ea148c59566ec717"
+gatsby-image@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.7.1.tgz#ccf0884c2503d2282bc92de110d375135040637c"
   dependencies:
     "@babel/runtime" "^7.14.0"
     object-fit-images "^3.2.4"
