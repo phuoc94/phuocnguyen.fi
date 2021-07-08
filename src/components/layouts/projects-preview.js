@@ -12,7 +12,7 @@ const ProjectPreview = ({ slug, title, predesc, ImageData, tags, url }) => (
       <Card.Title>{title}</Card.Title>
       <Card.Text>{predesc}</Card.Text>
       <div className="tags">
-        {tags.map(tag => {
+        {tags.map((tag) => {
           return (
             <Link to={"/tags/" + tag} key={tag} className={"tag " + tag}>
               {tag}

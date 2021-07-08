@@ -55,7 +55,6 @@
     Hosting: Configure and deploy Firebase Hosting sites
     'Enter'\*4
 
-
     ```shell
     firebase use websites-2c968
     firebase deploy

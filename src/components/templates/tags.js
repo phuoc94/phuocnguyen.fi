@@ -4,7 +4,7 @@ import Layout from "../layouts/layout"
 import ProjectPreview from "../layouts/projects-preview"
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     allProjectsJson(filter: { tags: { eq: $slug } }) {
       edges {
         node {

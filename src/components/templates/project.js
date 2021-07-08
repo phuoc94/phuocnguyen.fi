@@ -4,7 +4,7 @@ import Layout from "../layouts/layout"
 import Project from "../layouts/project"
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
       description
